@@ -1,0 +1,33 @@
+.App-header{
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+}
+.Titulo{
+color:#060b26;
+}
+
+.texto{
+margin-bottom: 5px;
+font-size: 14px;
+font-weight: 500;
+color: #555;
+}
+
+.campos{
+border: 1px solid #aaa;
+border-radius: 8px;
+background-color: #fff;
+height: 36px;
+width: 100%;
+}
+
+.lab{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    
+}

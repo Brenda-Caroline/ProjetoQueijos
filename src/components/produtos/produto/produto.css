@@ -1,0 +1,92 @@
+.container {
+  border-radius: 8px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+  display: flex;
+  padding: 15px;
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+
+.button_envia{
+  background-color: unset;
+  border-radius: 4px;
+  text-decoration: none;
+  /* color: black; */
+  padding: 11px 12px 11px 12px; 
+  flex: 1;
+  white-space: nowrap;
+  color: #060b26; 
+  border: 1px solid currentColor;
+  margin-right: 10px;
+  font-size: 95%;
+  cursor: pointer;
+  margin-left: 4%; 
+}
+.volta{
+margin-right: 5px;
+}
+.imgproduto{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  font-size: 30px;
+  color: #060b26;
+  text-align: center;
+  font-family: serif;
+}
+
+.preco{
+   font-size: 18px; 
+   /* font-weight: 700; */ 
+  color: #060b26; 
+  text-align: center;
+  
+}
+.quantidade{
+  font-size: 18px;
+  color: #060b26;
+  text-align: center;
+  
+}
+
+.queijaria{
+  font-size: 18px;
+  color: #060b26;
+  text-align: center;
+  
+}
+
+.telefone{
+  font-size: 18px;
+  color: #060b26;
+  text-align: center;
+  
+}
+
+ .descricao{
+  font-size: 18px;
+  color: #060b26;
+  text-align: center;
+  
+} 
+
+.botao{
+  text-align: center; 
+  margin-top: 5%;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.whats{
+  width: 4%;
+  margin-bottom: -10px;
+  cursor: pointer;
+}

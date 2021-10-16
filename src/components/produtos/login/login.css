@@ -1,0 +1,62 @@
+.App-form {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+    /*  border: 1px solid #060b26;   */
+    border-radius: 8px; 
+    margin-top: 0%;
+    margin-right: 5%;
+    padding-bottom: 3%;  
+    
+}
+.Campos{
+    display: block;
+}
+
+.Bot{
+    text-align: center; 
+    margin-top: 15px;
+    width: 50%; 
+} 
+
+.log{
+    text-align: center;
+    color: black; 
+    font-size: 30px;
+    width: 30%;
+    font-family: serif;
+}
+
+.produtos-form__group{    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;     
+}
+
+.produtos-form__group label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500px;
+    color: #555;
+}
+
+.produtos-form__group input{
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    width: 300px;    
+}
+
+
+.blogin{
+    background-color: #060b26  ; 
+    border: none; 
+    color:#fff;
+    padding-right: 10%;
+    padding-left: 10%;    
+    margin-bottom: 30px; 
+}
+
+ 

@@ -1,0 +1,30 @@
+.titH1{
+    font-family: serif;
+    text-align: center;
+    /* padding-right: 30px;  */
+}
+
+.quadrado{
+  border-radius: 8px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15); 
+  width: 95%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;  
+  flex:1; 
+  text-align: left;
+  
+} 
+
+.dados{
+    font-size: 18px;
+}
+
+.volt{
+    text-align: center;
+}
+
+#ed{
+    margin-left: 10px;
+}

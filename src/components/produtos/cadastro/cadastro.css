@@ -1,0 +1,51 @@
+ .App-form{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+    
+    
+
+}
+.produtos-form__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}
+
+.produtos-form__group label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    
+}
+
+.produtos-form__group input{
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    width: 300px;
+    
+}
+
+.produtos-title{
+    color:#060b26;
+    font-family: serif;
+}
+
+
+.sal{
+    text-align: center;
+}
+
+.button{
+    background-color:  #060b26;
+    border: none;
+    color:#fff;
+    cursor:pointer;
+
+}

@@ -1,0 +1,32 @@
+.navbarfooter {
+    background-color:  #060b26 ;
+    height: 200px;
+    display: flex;
+    position:relative;
+  }
+  
+.text {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  margin-right: 20%;
+  align-items: center;
+  padding-top: 5%;
+  color: white; 
+  font-size: 80%; 
+  margin-left: -17%;
+  text-decoration: none;
+}
+
+
+.social{
+  display: flex;
+  position: relative;
+  padding-left: 48%;
+  padding-bottom: 7%;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  font-size: 80%; 
+  
+}

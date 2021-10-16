@@ -1,0 +1,14 @@
+.imgIF{
+   width: 40%; 
+   align-items: center;
+}
+
+.PagSobre{
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+.sobre{
+    text-align: justify;
+}

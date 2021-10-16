@@ -1,0 +1,87 @@
+.App-form{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+    
+    
+
+}
+.produtos-form__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}
+
+.produtos-form__group label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    
+}
+
+.produtos-form__group input{
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    width: 300px;
+}
+
+.produtos-form__group textarea{
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 100px;
+    width: 300px;
+
+}
+
+.produtos-title{
+    color:#060b26;
+    font-family: serif;
+}
+
+/* .produtos-title h1{
+   text-align: center;
+    
+} */
+
+.produtos-form__group select{
+    width: 100%;
+}
+
+.up{
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.im {
+    text-align: center;
+    width: 100%;
+}
+
+.sal{
+    text-align: center;
+}
+
+.produtos-form__group_salvar{
+    width:50%;
+    text-align: center; 
+    font-size: 100%;  
+    background-color:  #060b26;
+    border: none;
+    color:#fff;
+    padding-top: 3%;
+    padding-bottom: 3%; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.escolher{
+    cursor: pointer;
+}

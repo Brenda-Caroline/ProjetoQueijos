@@ -1,0 +1,25 @@
+[debug] [2021-03-01T19:36:50.474Z] ----------------------------------------------------------------------
+[debug] [2021-03-01T19:36:50.475Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aluno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-01T19:36:50.476Z] CLI Version:   9.3.0
+[debug] [2021-03-01T19:36:50.476Z] Platform:      win32
+[debug] [2021-03-01T19:36:50.476Z] Node Version:  v15.1.0
+[debug] [2021-03-01T19:36:50.477Z] Time:          Mon Mar 01 2021 16:36:50 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-03-01T19:36:50.477Z] ----------------------------------------------------------------------
+[debug] [2021-03-01T19:36:50.477Z] 
+[debug] [2021-03-01T19:36:50.482Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-01T19:36:50.483Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\aluno\Desktop\Projeto1\Projeto-main
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
