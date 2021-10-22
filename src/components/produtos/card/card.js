@@ -26,7 +26,8 @@ const verproduto = (produtos) => {
   localStorage.setItem('@telefone', produtos.telefone);
   localStorage.setItem('@emailProduto', produtos.emailProduto);
 }
-/* 
+/*               
+
 const deleting = () =>{
   let id = localStorage.getItem("@idproduto");
   let userRef = firebase.database.ref('Produtos/' + id);

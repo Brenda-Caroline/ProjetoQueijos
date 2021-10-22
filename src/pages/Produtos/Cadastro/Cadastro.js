@@ -5,12 +5,12 @@ import { useParams } from 'react-router';
 
 const PagesCadastro = () => {
 
-  const { id } = useParams();
+  const { key } = useParams();
 
   return (
     <div>
         <UIContainer>
-            <Cadastro id={id ? Number.parseInt(id, 10): null} />
+            <Cadastro key={key ? Number.parseInt(key, 10): null} />
         </UIContainer>
         
     </div>

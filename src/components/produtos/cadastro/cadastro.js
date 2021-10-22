@@ -10,7 +10,6 @@ import {Link} from "react-router-dom";
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
-import 'firebase/storage';
 
 
 const initialValue = {
@@ -22,15 +21,15 @@ const initialValue = {
   senha: '',
 }
 
-const Cadastro = ({ id }) => {
+const Cadastro = ({ key }) => {
 
-  const [values, setValues] = useState(id ? null : initialValue);
+  const [values, setValues] = useState(key ? null : initialValue);
   
   const history = useHistory();
 
   useEffect(() => {
-    if (id) {
-      axios.get(`http://localhost:3000/Perfil/${id}`)
+    if (key) {
+      axios.get(`http://localhost:3000/Perfil/${key}`)
         .then((response) => {
           setValues(response.data);
         })
@@ -69,7 +68,7 @@ const Cadastro = ({ id }) => {
 
     const id = uuidv4();
 
-    database.ref(`/queijarias/` + id ).set({
+    database.ref(`/queijarias/` + key ).set({
       id: id,
       nomequeijaria:values.nomequeijaria,
       nomeprodutor: values.nomeprodutor,

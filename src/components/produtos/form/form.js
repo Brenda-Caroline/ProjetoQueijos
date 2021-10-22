@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, Redirect } from 'react-router-dom';
 import axios from 'axios';
+import firebase from 'firebase/app';
 import { storage,database } from '../firebase/index.js';
+import {getDatabase, ref, child} from 'firebase/database/dist/index.cjs';
 import './form.css';
 import swal from 'sweetalert';
 import { v4 as uuidv4 } from 'uuid';
@@ -21,21 +23,10 @@ const initialValue = {
 
 const Form = ({ id }) => {
 
-  const [values, setValues] = useState(initialValue);
+  const [values, setValues] = useState(id ? null : initialValue);
   const [image, setImage] = useState(null);
   const [url, setUrl] = useState("");
   const [progress, setProgress] = useState(0);
-
-
-  useEffect(() => {
-    if (id) {
-      axios.get(`http://localhost:3000/produto/${id}`)
-        .then((response) => {
-          setValues(response.data);
-        })
-    }
-  }, []);
-
 
   const history = useHistory();
 
@@ -50,9 +41,8 @@ const Form = ({ id }) => {
     ev.preventDefault();
 
     const id = uuidv4();
-    localStorage.setItem('@idprod', id);
+    /* localStorage.setItem('@idprod', id); */
     database.ref(`/produtos/` + id ).set({
-      id: id,
       nome:values.nome,
       src: values.imageUrl,
       descricao:values.descricao,
@@ -62,17 +52,33 @@ const Form = ({ id }) => {
       telefone: values.telefone,
       emailProduto:values.emailProduto, 
     }).then(()=>alert('Cadastrado com sucesso!')).catch((err)=>alert('Erro ao cadastrar: ' + err));
-  
-    
-  
   }
+
+  useEffect(() => {
+    if(id){
+    var dataRef = firebase.database().ref(`/produtos`);
+
+    dataRef.once('value', function(snapshot) {
+      var data1 = [];
+    
+      snapshot.forEach(function(childSnapshot) {
+        var key = childSnapshot.key;
+        var data = childSnapshot.val();
+
+        data1.push({ key: key, data});
+        
+        console.log(data);
+        setValues(data);
+      });
+    });
+  }}, []);
 
   const handleChange = e => {
     if (e.target.files[0]) {
       setImage(e.target.files[0]);
     }
   };
-
+  
   const handleUpload = () => {
     const uploadTask = storage.ref(`images/${image.name}`).put(image);
     uploadTask.on(
@@ -94,7 +100,7 @@ const Form = ({ id }) => {
           .then(url => {
             swal("Upload feito com sucesso!")
               .then (<Redirect to='/'/>)
-            // setValues(...initialValue, initialValue.imageUrl = url);
+             //setValues(...initialValue, initialValue.imageUrl = url);
             setValues({ ...values, 'imageUrl': url });
             
           });
@@ -130,7 +136,7 @@ const Form = ({ id }) => {
               <label htmlFor="quantidade">Quantidade</label>
               <input id="quantidade" name="quantidade" type="number" onChange={onChange} value={values.quantidade} />
             </div>
-           {/*  <div className="produtos-form__group">
+             {/* <div className="produtos-form__group">
               <label htmlFor="telefone">Telefone para contato</label>
               <input id="telefone" name="telefone" type="text" onChange={onChange} value={values.telefone} placeholder="(xx) xxxxx-xxxx" />
             </div> 
